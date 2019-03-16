@@ -22,5 +22,5 @@
     "shorthand-property-no-redundant-values": null,
     "unit-whitelist": [ "deg", "em", "ex", "ms", "rem", "%", "s", "px", "vw", "vh" ]
   },
-  "ignoreFiles": []
+  "ignoreFiles": ["build/**/*"]
 }
