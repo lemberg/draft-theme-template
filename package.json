@@ -48,7 +48,8 @@
     "stylelint-webpack-plugin": "^0.10.5",
     "webpack": "^4.28.4",
     "webpack-bundle-analyzer": "^3.0.3",
-    "webpack-cli": "^3.2.1"
+    "webpack-cli": "^3.2.1",
+    "wildcards-entry-webpack-plugin-forked": "git+ssh://git@github.com:vadym1930/wildcards-entry-webpack-plugin.git"
   },
   "dependencies": {}
 }

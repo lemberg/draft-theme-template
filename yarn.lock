@@ -8354,6 +8354,12 @@ widest-line@^2.0.0:
   dependencies:
     string-width "^2.1.1"
 
+"wildcards-entry-webpack-plugin-forked@git+ssh://git@github.com:vadym1930/wildcards-entry-webpack-plugin.git":
+  version "2.1.0"
+  resolved "git+ssh://git@github.com:vadym1930/wildcards-entry-webpack-plugin.git#71cbb7a56a11757b4198b0ada3b6f62359dbb521"
+  dependencies:
+    glob "^7.1.2"
+
 wordwrap@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-1.0.0.tgz#27584810891456a4171c8d0226441ade90cbcaeb"

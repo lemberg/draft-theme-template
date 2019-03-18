@@ -5,13 +5,12 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
 const IgnoreEmitPlugin = require('ignore-emit-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
+const WildcardsEntryWebpackPlugin = require('wildcards-entry-webpack-plugin-forked');
 
 const path = require('path');
 
 // custom imports
 const CollectIgnoredWebpackHelper = require('./webpack-custom-helpers/collect-ignored-webpack-helper');
-const WildcardsEntryWebpackPlugin = require('./webpack-custom-helpers/wildcards-entry-webpack-plugin');
-
 const getVendorName = require('./webpack-custom-helpers/vendor-name-generate-helper');
 const pkg = require('./package.json');
 
