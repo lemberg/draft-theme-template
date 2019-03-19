@@ -3,14 +3,3 @@ app-styles:
   css:
     theme:
       build/app/app.css: {}
-    component:
-      build/sitebranding/sitebranding.css: {}
-
-# library example
-# full-page:
-#   version: 1.0
-#   js:
-#     build/vendors~fullpage.js: {}
-#     build/fullpage/fullpage.js: {}
-#   dependencies:
-#     - core/jquery
