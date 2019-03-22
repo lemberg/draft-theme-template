@@ -1,4 +1,5 @@
 // this file contains all stuff should be available in whatever component you have
-@import './settings/_variables.scss';
-@import './settings/_icomoon.mixin.scss';
-@import '../fonts/icomoon/variables.scss';
+@import '../fonts/icomoon/variables';
+@import './settings/variables';
+@import './settings/icomoon/icomoon.mixin';
+@import './settings/mixins';
