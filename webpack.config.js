@@ -41,6 +41,7 @@ const defaultEntries = { app: path.resolve(__dirname, './src/app.scss') };
 const entry = WildcardsEntryWebpackPlugin.entry(
   './src/components/**/*.+(scss|js)',
   defaultEntries,
+  'components',
 );
 
 /**
