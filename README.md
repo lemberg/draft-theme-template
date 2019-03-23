@@ -5,6 +5,9 @@
 - `yarn dev` — watching mode for development (don't forget about `yarn install` before all)
 - `yarn build` — one-time transpiling building mode for production
 - `yarn explore` — mode with an interactive map of bundles for analyzing sizes etc.
+- `yarn lint:js` — check `js` files by eslint
+- `yarn lint:scss` — check `scss` files by stylelint
+- `format` — format `js` and `scss` files
 
 ## How to organize components?
 

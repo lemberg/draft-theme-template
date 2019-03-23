@@ -10,7 +10,10 @@
   "scripts": {
     "dev": "NODE_ENV=development node_modules/.bin/webpack --mode=development --watch",
     "build": "NODE_ENV=production node_modules/.bin/webpack --mode=production",
-    "explore": "NODE_ENV=production IS_EXPLORE=true node_modules/.bin/webpack --mode=production --watch"
+    "explore": "NODE_ENV=production IS_EXPLORE=true node_modules/.bin/webpack --mode=production --watch",
+    "lint:js": "eslint \"src/**/*.js\"",
+    "lint:scss": "stylelint \"src/**/*.scss\"",
+    "format": "prettier --write \"src/**/*.{js,scss}\""
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
