@@ -101,15 +101,15 @@ could help you to avoid a bit ugly paths like this `../../images/joshua-coleman-
 
 **Naming folder and files and variables convention**
 
-- Folders, files, variables should be named in a kebab-case-started-with-small-letter
+- **SCSS** component folders, files, variables should be named in a `kebab-case-started-with-small-letter`
 
 ```scss
 // _variables.scss
 
 $primary-color: #c00;
 ```
-
 - Partitions should start with an underscore `_i-am-a-partition.scss`.
+- **JS** component folders should be named in a `camelCaseStartedWithSmallLetter`
 
 EXCEPTION, if you have a js component which is a `Class` — component js file should
-start with capital letter. For example, `Slider-testimonials.js`.
+start with a capital letter. For example, `SliderTestimonials.js`.
