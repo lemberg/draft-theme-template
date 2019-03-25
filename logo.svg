@@ -1,3 +1,3 @@
-<svg height="30" width="200">
+<svg xmlns="http://www.w3.org/2000/svg" height="30" width="200">
   <text x="0" y="15" fill="blue" style="font-weight: 900; font-family: sans-serif;">Draft starter</text>
 </svg>

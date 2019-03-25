@@ -1,0 +1,5 @@
+app-styles:
+  version: 1.0
+  css:
+    theme:
+      build/app.css: {}

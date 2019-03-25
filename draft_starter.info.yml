@@ -4,3 +4,7 @@ package: Custom
 description: 'Starter theme for the draft, based on draft_base theme'
 core: 8.x
 base theme: draft_base
+
+#libraries
+libraries:
+  - draft_starter/app-styles

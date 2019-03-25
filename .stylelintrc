@@ -1,0 +1,26 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
+  "rules": {
+    "length-zero-no-unit": null,
+    "at-rule-no-unknown": null,
+    "comment-empty-line-before": null,
+    "function-linear-gradient-no-nonstandard-direction": null,
+    "function-whitespace-after": null,
+    "no-descending-specificity": null,
+    "no-duplicate-selectors": null,
+    "no-unknown-animations": true,
+    "media-feature-name-no-unknown": [ true, {
+      "ignoreMediaFeatureNames": [
+        "prefers-reduced-motion",
+        "min--moz-device-pixel-ratio"
+      ]
+    } ],
+    "number-leading-zero": "always",
+    "property-no-unknown": null,
+    "rule-empty-line-before": null,
+    "selector-pseudo-element-colon-notation": null,
+    "shorthand-property-no-redundant-values": null,
+    "unit-whitelist": [ "deg", "em", "ex", "ms", "rem", "%", "s", "px", "vw", "vh" ]
+  },
+  "ignoreFiles": ["build/**/*"]
+}
