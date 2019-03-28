@@ -1,5 +1,0 @@
-@mixin mq-max($canvas) {
-  @media only screen and (max-width: $canvas) {
-    @content;
-  }
-}

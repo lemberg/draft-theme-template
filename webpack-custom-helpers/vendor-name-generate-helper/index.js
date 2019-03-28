@@ -9,11 +9,13 @@
 const getVendorName = (
   chunks,
   cacheGroupKey,
-  vendorChunkNameLengthRestriction,
+  vendorChunkNameLengthRestriction = 2,
 ) => {
   const name = [cacheGroupKey];
   chunks.forEach(chunk => {
-    name.push(`${chunk.name.split('/')[0]}`);
+    const fullPath = chunk.name.split('/');
+    const baseName = fullPath[fullPath.length - 1];
+    name.push(baseName);
   });
   if (name.length > vendorChunkNameLengthRestriction) {
     if (vendorChunkNameLengthRestriction > 1) {

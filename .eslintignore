@@ -1,3 +1,2 @@
 build/**/*
 src/externals/**/*
-webpack-custom-helpers/wildcards-entry-webpack-plugin/**/*
