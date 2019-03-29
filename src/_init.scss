@@ -1,5 +1,7 @@
 // this file contains all stuff should be available in whatever component you have
+@import '~foundation-sites/scss/foundation';
 @import '../fonts/icomoon/variables';
+@import './settings/settings';
 @import './settings/variables';
 @import './settings/icomoon/icomoon.mixin';
 @import './settings/mixins';

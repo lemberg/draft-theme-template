@@ -12,8 +12,8 @@
     "build": "NODE_ENV=production node_modules/.bin/webpack --mode=production",
     "explore": "NODE_ENV=production IS_EXPLORE=true node_modules/.bin/webpack --mode=production --watch",
     "lint:js": "eslint \"src/**/*.js\" --ignore-pattern \"src/externals/**/*.js\"",
-    "lint:scss": "stylelint \"src/**/*.scss\" --ignore-pattern \"src/externals/**/*.scss\"" ,
-    "format": "prettier --write \"src/**/*.{js,scss}\" --ignore-path \"src/externals/**/.{js,scss}\""
+    "lint:scss": "stylelint \"src/**/*.scss\" --ignore-pattern \"src/externals/**/*.scss\"",
+    "format": "prettier --write \"src/**/*.{js,scss}\""
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
@@ -54,5 +54,7 @@
     "webpack-cli": "^3.2.1",
     "wildcards-entry-webpack-plugin-forked": "git+ssh://git@github.com:vadym1930/wildcards-entry-webpack-plugin.git"
   },
-  "dependencies": {}
+  "dependencies": {
+    "foundation-sites": "^6.9.3"
+  }
 }

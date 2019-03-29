@@ -15,19 +15,6 @@ const getVendorName = require('./webpack-custom-helpers/vendor-name-generate-hel
 const pkg = require('./package.json');
 
 /**
- * We set next `vendorChunkNameLengthRestriction` to control
- * in a smart way a vendor file name.
- * This mean — if we have vendor only for one component we could include it
- * to the cooresponding library
- * For example, we have a particular smart component which uses lodash
- * and anyone else componen didn't have that dependency. So we could make
- * `Drupal library`, which contains with component itself + it's vendor
- * Does it make sense?
- * @type number
- */
-const vendorChunkNameLengthRestriction = 2;
-
-/**
  * Next object contains default entry points represents by key which is the name
  * of our entry point and the value which is path. Do not forget to resolve the path
  * if you are going to add some more entries as a defaults (path.resolve).
@@ -173,11 +160,7 @@ module.exports = {
           test: /[\\/]src[\\/]shared[\\/]/,
           name(module, chunks, cacheGroupKey) {
             // generate a chunk name...
-            return getVendorName(
-              chunks,
-              cacheGroupKey,
-              vendorChunkNameLengthRestriction,
-            );
+            return getVendorName(chunks, cacheGroupKey);
           },
           minSize: 0,
         },
@@ -185,11 +168,7 @@ module.exports = {
           test: /[\\/]src[\\/]externals[\\/]/,
           name(module, chunks, cacheGroupKey) {
             // generate a chunk name...
-            return getVendorName(
-              chunks,
-              cacheGroupKey,
-              vendorChunkNameLengthRestriction,
-            );
+            return getVendorName(chunks, cacheGroupKey);
           },
           minSize: 0,
         },
@@ -197,11 +176,7 @@ module.exports = {
           test: /[\\/]node_modules[\\/]/,
           name(module, chunks, cacheGroupKey) {
             // generate a chunk name...
-            return getVendorName(
-              chunks,
-              cacheGroupKey,
-              vendorChunkNameLengthRestriction,
-            );
+            return getVendorName(chunks, cacheGroupKey);
           },
           minSize: 0,
         },
