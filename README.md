@@ -18,17 +18,19 @@ I mean styles which are fair for the whole app. That is the default entry point.
 cause an error). Accordingly we have default corresponding Drupal library `app-styles`
 which is defined in the `draft_starter.libraries.yml` and applied in the `draft_starter.info.yml`.
 
-`src/components` — the place where every component should live in a separate folder.
-The components folder could consist of
+`src/components` — the place where every component should live in an appropriate folder.
+There are available Atoms, Molecules, Organisms, Templates, Pages folders.
+The component folder could consist of
 
 - **js less component example**
   `component-a.scss` file will be the entry point for Webpack
 
         ├── src
           ├── components
-            ├── component-a
-              ├── component-a.scss
-              ├── component-a.html.twig
+            ├── organisms
+              ├── component-a
+                ├── component-a.scss
+                ├── component-a.html.twig
 
 - **js component example**
   `component-a.js` file will be the entry point and `_component-a.scss` would be imported inside.
@@ -41,16 +43,18 @@ The components folder could consist of
 
       ├── src
         ├── components
-          ├── component-a
-            ├── component-a.js
-            ├── _component-a.scss
-            ├── component-a.html.twig
+          ├── organisms
+            ├── component-a
+              ├── component-a.js
+              ├── _component-a.scss
+              ├── component-a.html.twig
 
 - **⛔️ DON'T DO EXAMPLE. Don't make two entry points for one component**
 
       ├── src
         ├── components
-          ├── component-a
+          ├── organisms
+            ├── component-a
             ├── component-a.js
             ├── component-a.scss
             ├── component-a.html.twig
